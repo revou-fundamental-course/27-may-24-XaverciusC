@@ -1,1 +1,49 @@
 /* Ini css */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>section {
+    display: flex;
+}
+
+.nav-item {
+    border: 2px solid black;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-image: url('assets/escv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.banner-container {
+    border: 2px solid black;
+    height: 258px;
+    
+}
+
+.facilities-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.msg-us-sec {
+    display: flex;
+}
+
+.form-results {
+    border: 2px solid black;
+    height: 100px;
+}
+
+.result-container {
+    width: 100%;
+}
