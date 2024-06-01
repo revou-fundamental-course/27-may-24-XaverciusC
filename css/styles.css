@@ -17,7 +17,7 @@ nav>section {
     width: 50px;
     border-radius: 50%;
     border: 2px solid black;
-    background-image: url('assets/escv.jpg');
+    background-image: url("assets/escv.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
