@@ -1,98 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     
     <head>
-        
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Xaver Portofolio</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="/css/styles.css">
 
+        <title>Trial Web 2.0</title>
     </head>
 
     <body>
-
-        <nav>
-            <div class="logo-icon"></div>
-
-            <section>
-                <a class="nav-item" href="home">Home</a>
-                <a class="nav-item" href="facilities">Facilities</a>
-                <a class="nav-item" href="msgus">Massage Us</a>
-            </section>
-
+<!------------------------------ Login ------------------------------>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <h2 for="user">What's Your Name Traveler</h2>
+                <input type="text" name="user" id="username" autocomplete="off" />
+                <button onclick="submitUsername()">Submit</button>
+            </div>
+        </div>
+<!------------------------------ Navigation ------------------------------>
+        <nav class="navigation">
+            <div class="nav-wrapper">
+                <div class="logo"></div>
+                    <div class="button-navigasi">
+                        <button class="button-navigasi-user" onclick="popup()""></button>
+                        <button class="button-navigasi-home" onclick="pagehome()"></button>
+                        <button class="button-navigasi-product" onclick="pageprdct()"></button>
+                        <button class="button-navigasi-msg" onclick="pagemsg()"></button>
+                    </div>
+            </div>
         </nav>
 
-        <hr>
-
-        <section>
-
-            <section id="home">
-                <header>
-                    <h1>Hi Xaver, Welcome to website</h1>
-                </header>
-
-                <article>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ipsa quod adipisci rerum explicabo praesentium beatae, earum soluta aliquid harum, vel minus porro. Sequi esse tempora, doloribus ad quaerat itaque.</p>
-                    <div class="banner-container">
-
-                    </div>
-                </article>
-            </section>
-
-            <hr>
-
-            <section id="facilities">
-                <header>
-                    <h1>Our Facilities</h1>
-                </header>
-
-                <article class="facilities-list">
-                    <div>
-                        <div style="width: 50px; height: 50px; border: 1px solid black"></div>
-                        <h5>Free Refil</h5>
-                    </div>
-                    <div>
-                        <div style="width: 50px; height: 50px; border: 1px solid black"></div>
-                        <h5>Free Refil</h5>
-                    </div>
-                    <div>
-                        <div style="width: 50px; height: 50px; border: 1px solid black"></div>
-                        <h5>Free Refil</h5>
-                    </div>
-                </article>
-            </section>
-
-            <hr>
-
-            <section id="msgus">
-                <header>
-                    <h1>Massage Us</h1>
-                </header>
-
-                <section class="msg-us-sec">
-                    <section>
-                        <form>
-                            <label>Name :</label>
-                            <input type="text">
-                        </form>
-                    </section>
-
-                    <section class="result-container">
-                        <div class="form-results">
-
-                        </div>
-                    </section>
+        <main class="wrapper">
+<!------------------------------ Home ------------------------------>
+            <div class="home-wrapper" id="home">
+                <section class="welcome-word">
+                    <h2>Hi <span id="user">Traveler</span>,</h2>
+                    <h1>Welcome to HydraLink</h1>
+                    <p>link all of your design with a high accuracy percentage</p>
                 </section>
-            </section>
 
-        </section>
+                <section class="banner-wrapper">
+                    <button class="button-prev" id="previmages" onclick="showprevimage()"></button>
+                    <img class="banner-1" id="Imgs" src="/assets/banner3d.png" alt="">
+                    <button class="button-next" id="nextimages" onclick="shownextimage()"></button>
+                </section>
+            </div>
+<!------------------------------ Product ------------------------------>
+            <div class="prod-wrapper" id="prdct">
+                <h2>Our Products</h2>
+                <div class="product-container">
+                    <div class="container-product">
+                        <div class="product-item">
+                            <img src="/assets/sketchup.png" alt="SketchUp">
+                            <div class="product-info">
+                                <h5>SketchUp</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-product">
+                        <div class="product-item">
+                            <img src="/assets/cura.png" alt="Cura">
+                            <div class="product-info">
+                                <h5>Ultimaker Cura</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-product">
+                        <div class="product-item">
+                            <img src="/assets/ppt.png" alt="PPT">
+                            <div class="product-info">
+                                <h5>Ms. Power Point</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-product">
+                        <div class="product-item">
+                            <img src="/assets/web.png" alt="Web">
+                            <div class="product-info">
+                                <h5>Web UI</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!------------------------------ Message ------------------------------>
+            <div class="message-wrapper" id="msgus">
+                <h2>Message Us</h2>
+                <div class="message-container">
+                    <div class="message-input">
+                        <form class="forms" name="formin" onsubmit="return validateForm();">
+                            <!------------ Nama ------------>
+                            <div class="container-form">
+                                <label for="nama-input">Name</label>
+                                <span>:</span>
+                                <input type="text" name="nama-input" id="nama-input">
+                            </div>
+                            <!------------ TTL ------------>
+                            <div class="container-form">
+                                <label for="ttl">Birth Date</label>
+                                <span>:</span>
+                                <input type="date" name="ttl" id="ttl">
+                            </div>
+                            <!------------ Jenis Kelamin ------------>
+                            <div class="container-form">
+                                <label for="ttl">Gender</label>
+                                <span>:</span>
+                                <input type="radio" id="laki" name="gender" value="laki">
+                                <label for="laki">Male</label>
 
-        <hr>
-
-        <footer>
-
-        </footer>
+                                <input type="radio" id="cewe" name="gender" value="laki">
+                                <label for="cewe">Female</label>
+                            </div>
+                            <!------------ Msg ------------>
+                            <div class="container-form">
+                                <label for="pesan">Massage</label>
+                                <span>:</span>
+                                <textarea name="pesan" rows="8" cols="64" id="pesan"></textarea>
+                            </div>
+                            <button class="submit" id="submit" value="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="message-output">
+                        <textarea name="area-out" id="area-output" rows="8" cols="64"></textarea>
+                    </div>
+                </div>
+            </div>
+<!------------------------------ Footer ------------------------------>
+            <div class="footer-wrapper">    
+                <footer class="footer-container">
+                    <div class="footer">
+                        <button class="button-linkdin" onclick="location.href='https://www.linkedin.com/in/xaverciuscezar'"></button>
+                        <button class="button-wa"></button>
+                        <button class="button-email"></button>
+                    </div>
+                    
+                    <h3>Xavercius @2024</h3>
+                </footer>
+            </div>       
+        </main>
+        <script src="/js/script.js"></script>
     </body>
 
 </html>
