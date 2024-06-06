@@ -49,7 +49,7 @@ function showprevimage () {
     document.getElementById("Imgs").src = images[currentIndex];
 }
 
-setInterval(shownextimage, 3000)
+setInterval(shownextimage, 5000)
 
 // --- Message in --------------------------------------
 
