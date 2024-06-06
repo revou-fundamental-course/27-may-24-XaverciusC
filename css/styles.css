@@ -69,7 +69,7 @@ body {
 .logo {
     width: 35px;
     height: 35px;
-    background-image: url("/assets/logo.png");
+    background-image: url("assets/logo.png");
     background-size: cover;
     margin: 10px;
 }
@@ -91,19 +91,19 @@ body {
 }
 
 .button-navigasi-user {
-    background-image: url("/assets/user.png");
+    background-image: url("assets/user.png");
 }
 
 .button-navigasi-home {
-    background-image: url("/assets/home1.png");
+    background-image: url("assets/home1.png");
 }
 
 .button-navigasi-product {
-    background-image: url("/assets/prod1.png");
+    background-image: url("assets/prod1.png");
 }
 
 .button-navigasi-msg {
-    background-image: url("/assets/msg1.png");
+    background-image: url("assets/msg1.png");
 }
 
 .button-navigasi-user:hover,
@@ -174,11 +174,11 @@ body {
 }
 
 .button-prev {
-    background-image: url("/assets/prev.png");
+    background-image: url("assets/prev.png");
 }
 
 .button-next {
-    background-image: url("/assets/next.png");
+    background-image: url("assets/next.png");
 }
 
 .button-prev:hover,
@@ -309,7 +309,7 @@ body {
     height: 30px;
     width: 30px;
     cursor: pointer;
-    background-image: url("/assets/linkdin.png");
+    background-image: url("assets/linkdin.png");
     background-size: cover;
     border:none;
     vertical-align: middle;
@@ -322,7 +322,7 @@ body {
     height: 30px;
     width: 30px;
     cursor: pointer;
-    background-image: url("/assets/wa.png");
+    background-image: url("assets/wa.png");
     background-size: cover;
     border:none;
     vertical-align: middle;
@@ -334,7 +334,7 @@ body {
     height: 30px;
     width: 40px;
     cursor: pointer;
-    background-image: url("/assets/gmail.png");
+    background-image: url("assets/gmail.png");
     background-size: cover;
     border:none;
     vertical-align: middle;
