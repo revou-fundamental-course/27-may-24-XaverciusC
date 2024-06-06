@@ -32,10 +32,10 @@ function pagemsg() {
 
 // --- Banner change --------------------------------------
 const images = [
-    "../assets/sketchup.png",
-    "../assets/cura.png",
-    "../assets/ppt.png",
-    "../assets/web.png"
+    "../assets/banner3d.png",
+    "../assets/bannercura.png",
+    "../assets/bannerppt.png",
+    "../assets/bannerweb.png"
 ];
 let currentIndex = 0;
 
