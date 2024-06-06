@@ -41,9 +41,14 @@
                 </section>
 
                 <section class="banner-wrapper">
-                    <button class="button-prev" id="previmages" onclick="showprevimage()"></button>
-                    <img class="banner-1" id="Imgs" src="assets/banner3d.png" alt="">
-                    <button class="button-next" id="nextimages" onclick="shownextimage()"></button>
+                    <button class="button-prev" id="previmages" onclick="nextSlide(-1)"></button>
+                    <div class="banner-wrapper-layer">  
+                        <img class="banner-layer" id="Imgs" src="assets/banner3d.png" alt="">
+                        <img class="banner-layer" id="Imgs" src="assets/bannercura.png" alt="">
+                        <img class="banner-layer" id="Imgs" src="assets/bannerppt.png" alt="">
+                        <img class="banner-layer" id="Imgs" src="assets/bannerweb.png" alt="">
+                    </div>
+                    <button class="button-next" id="nextimages" onclick="nextSlide(1)"></button>
                 </section>
             </div>
 <!------------------------------ Product ------------------------------>

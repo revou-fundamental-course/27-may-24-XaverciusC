@@ -31,25 +31,28 @@ function pagemsg() {
 }
 
 // --- Banner change --------------------------------------
-const images = [
-    "../assets/banner3d.png",
-    "../assets/bannercura.png",
-    "../assets/bannerppt.png",
-    "../assets/bannerweb.png"
-];
-let currentIndex = 0;
+let indexSlide = 1;
+showBanner(1);
 
-function shownextimage () {
-    currentIndex = (currentIndex + 1) % images.length;
-    document.getElementById("Imgs").src = images[currentIndex];
+function nextSlide(n) {
+    showBanner((indexSlide += n));
 }
 
-function showprevimage () {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    document.getElementById("Imgs").src = images[currentIndex];
+function showBanner(indexBanner) {
+    let listImages = document.getElementsByClassName('banner-layer');
+    if (indexBanner > listImages.length) indexSlide = 1;
+
+    let index = 0;
+    while (index < listImages.length) {
+        listImages[index].style.display= 'none';
+        index++
+    }
+
+    listImages[indexSlide - 1].style.display = '';
+
 }
 
-setInterval(shownextimage, 5000)
+setInterval(() => nextSlide(1), 3000); 
 
 // --- Message in --------------------------------------
 

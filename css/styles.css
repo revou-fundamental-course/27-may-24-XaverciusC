@@ -153,6 +153,13 @@ body {
     border-radius: 8px;
 }
 
+.banner-wrapper-layer>img {
+    max-width: 75%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
 .button-prev,
 .button-next {
     margin: 0 10px;
